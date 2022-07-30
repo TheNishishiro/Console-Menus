@@ -21,9 +21,19 @@ public class ConsolePage
 		return this;
 	}
 
+	protected void SetBackText(string backText)
+	{
+		TextBackOption = backText;
+	}
+
 	public void AssignToMenu(ConsoleMenu consoleMenu)
 	{
 		ConsoleMenu = consoleMenu;
+	}
+
+	protected void NavigateTo<TPage>() where TPage : ConsolePage
+	{
+		ConsoleMenu?.NavigateTo<TPage>();
 	}
 
 	public virtual void OnTitleDisplay()

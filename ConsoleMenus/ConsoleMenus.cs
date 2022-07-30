@@ -35,7 +35,7 @@ public class ConsoleMenu
         return this;
     }
 
-    public void MainPage<T>()
+    public void MainPage<T>() where T : ConsolePage
     {
         if (!ConsolePages.ContainsKey(typeof(T)))
             throw new PageNotFoundException<T>();
@@ -52,7 +52,7 @@ public class ConsoleMenu
             _shouldExit = true;
     }
 
-    public void NavigateTo<T>()
+    public void NavigateTo<T>() where T : ConsolePage
     {
         if (!ConsolePages.ContainsKey(typeof(T)))
             throw new PageNotFoundException<T>();
@@ -61,7 +61,7 @@ public class ConsoleMenu
         _history.Push(page);
     }
 
-    public void Display()
+    private void Display()
     {
         while (!_shouldExit)
         {

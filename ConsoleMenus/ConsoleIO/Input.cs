@@ -108,7 +108,12 @@ public class Input
     public static void AwaitAny()
     {
         Output.Information("Press any key to continue");
-        Console.ReadKey();
+        Console.ReadKey(false);
+    }
+
+    public static void AwaitAnySilent()
+    {
+        Console.ReadKey(false);
     }
 
     public static string StringMasked(string prompt, char mask = '*')
