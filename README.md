@@ -3,6 +3,12 @@ A very simple library for creating neat console menus!
 
 ## Screenshots
 
+### Main menu
+![Main menu](https://github.com/TheNishishiro/Console-Menus/blob/master/ConsoleMenus/Screenshots/MainMenu.png?raw=true)
+
+### Sub pages
+![Sub menu](https://github.com/TheNishishiro/Console-Menus/blob/master/ConsoleMenus/Screenshots/SubMenu.png?raw=true)
+
 ## Usage
 
 Using pages is pretty easy but first you need to create your pages.
